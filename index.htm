@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Exam Seat Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>College Exam Seat Planner</h1>
+
+<!-- Add Classroom -->
+<section>
+    <h2>Add Classroom</h2>
+    <input type="text" id="roomId" placeholder="Room ID">
+    <input type="number" id="capacity" placeholder="Capacity">
+    <input type="number" id="floorNo" placeholder="Floor No">
+    <label>
+        <input type="checkbox" id="washroom"> Near Washroom
+    </label>
+    <button onclick="addClassroom()">Add Classroom</button>
+</section>
+
+<!-- Classroom List -->
+<section>
+    <h2>Classroom List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Room ID</th>
+                <th>Capacity</th>
+                <th>Floor</th>
+                <th>Near Washroom</th>
+            </tr>
+        </thead>
+        <tbody id="classroomTable"></tbody>
+    </table>
+</section>
+
+<!-- Allocate Seats -->
+<section>
+    <h2>Allocate Exam Seats</h2>
+    <input type="number" id="students" placeholder="Total Students">
+    <button onclick="allocateSeats()">Allocate</button>
+</section>
+
+<!-- Output -->
+<section>
+    <h2>Allocation Result</h2>
+    <div id="result"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
